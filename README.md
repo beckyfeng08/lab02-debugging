@@ -1,15 +1,3 @@
-# lab02-debugging
-
-# Setup 
-
-Create a [Shadertoy account](https://www.shadertoy.com/). Either fork this shadertoy, or create a new shadertoy and copy the code from the [Debugging Puzzle](https://www.shadertoy.com/view/flGfRc).
-
-Let's practice debugging! We have a broken shader. It should produce output that looks like this:
-[Unbelievably beautiful shader](https://user-images.githubusercontent.com/1758825/200729570-8e10a37a-345d-4aff-8eff-6baf54a32a40.webm)
-
-It don't do that. Correct THREE of the FIVE bugs that are messing up the output. You are STRONGLY ENCOURAGED to work with a partner and pair program to force you to talk about your debugging thought process out loud.
-
-Extra credit if you can find all FIVE bugs.
 
 # Submission
 - Create a pull request to this repository
@@ -17,3 +5,17 @@ Extra credit if you can find all FIVE bugs.
 - In the README, create a link to your shader toy solution with the bugs corrected
 - In the README, describe each bug you found and include a sentence about HOW you found it.
 - Make sure all three of your shadertoys are set to UNLISTED or PUBLIC (so we can see them!)
+
+https://www.shadertoy.com/view/3fXfDl
+Teammates:
+Gavin Sears
+
+Link: https://www.shadertoy.com/view/3fXfDl
+
+Bugs:
+1. Compile-time error line 99 vec syntax error fixed to vec2
+2. Compile-time error line 99 normalize UV coordinates to [-1, 1] on both x and y axes
+3. Compile time error line 102 raycast argument take in uv2 instead of uv
+4. Runtime error line 11 iResolution.x changed to iResolution.y to get the length of the horizontal screen correctly
+5. Runtime error line 75 change reflect argument from eye to dir to account for finding the direction of the ray bouncing off of the sphere and not a consistently valued ray
+   
